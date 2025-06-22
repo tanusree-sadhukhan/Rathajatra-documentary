@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>SLIDING DOCUMENTORY</title>
+    <style>
+        body{
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               background-image: url("OIP (1).webp");
+              background-size: contain;
+              
+        }
+        #sliding{
+            height: 500px;
+            width: 900px;
+            margin-top: 100px;
+            background-image:url("rath history.jpg");
+            background-size: cover;
+        
+           animation-name: slide;
+            animation-duration: 20s;
+            animation-timing-function: ease-out;
+            animation-iteration-count: infinite;
+            animation-delay: 5s;
+            animation-direction:normal;
+        }
+        
+        @keyframes slide{
+            0%{
+               background-image: url("rath history.jpg");
+              
+
+            }
+
+            50%{
+               background-image: url("jai jaganath.jpg");
+                animation-delay: 5s;
+                  background-size: cover;
+            }
+            65%{
+                background-image: url("tin vai behen.jpg");
+                 animation-delay: 5s;
+                   background-size: cover;
+            }
+
+            100%{
+              background-image:url("happy rathajatra.webp") ;
+              background-size: contain;
+               animation-delay: 5s;
+            }
+        }
+        #navbar{
+            height: 100px;
+            width: 100%;
+            background-color: transparent;
+            backdrop-filter: blur(10px);
+            color: black;
+            position: fixed;
+            top: 0;
+            display: inline-block;
+        }
+
+        .one{
+            font-size: 25px;
+             font-weight: bold;
+            text-transform: none;
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+        }
+        a{
+            
+            margin-right: 200px;
+            text-transform: uppercase;
+            color: white;
+            text-decoration: underline;
+            
+        }
+        audio{
+            position: fixed;
+            bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="sliding"></div>
+    <div id="navbar">
+        <a class="one">Rathajatra Documentary</a>
+        <a href="ABOUT.HTML">ABOUT</a>
+        <a href="gallery.html"> HISTORY</a>
+        <a href="contact">contact us</a>
+    </div>
+    <audio controls>
+        <source src="piano-background-music-soft-344547.mp3" type="audio/mpeg">
+    </audio>
+
+</body>
+</html>
